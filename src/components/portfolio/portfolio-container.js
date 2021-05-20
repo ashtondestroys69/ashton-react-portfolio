@@ -28,14 +28,14 @@ export default class PortfolioContainer extends Component {
 
     getPortfolioItems() {
         axios.get('https://ashtonwashburn.devcamp.space/portfolio/portfolio_items')
-    .then(response => {
-        this.setState( {
-            data: response.data.portfolio_items
+        .then(response => {
+            this.setState( {
+                data: response.data.portfolio_items
+            })
         })
-    })
-    .catch(error => {
-        console.log("error data", error);
-    });
+        .catch(error => {
+            console.log("error data", error);
+        });
     }
 
     portfolioItems() {
@@ -55,11 +55,11 @@ export default class PortfolioContainer extends Component {
 
         return (
             <div className="portfolio-items-wrapper">
-                <button className="btn" onClick={() => this.handleFilter('eCommerce')}>eCommerce</button>
-                <button className="btn" onClick={() => this.handleFilter('Scheduling')}>Scheduling</button>
-                <button className="btn" onClick={() => this.handleFilter('Enterprise')}>Enterprise</button>
+                <button className="btn" onClick={() => this.handleFilter('eCommerce')} hidden >eCommerce</button>
+                <button className="btn" onClick={() => this.handleFilter('Scheduling')} hidden >Scheduling</button>
+                <button className="btn" onClick={() => this.handleFilter('Enterprise')} hidden >Enterprise</button>
 
-                {this.portfolioItems()};
+                {this.portfolioItems()}
             </div>
         );
     }
