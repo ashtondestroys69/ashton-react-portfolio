@@ -1,12 +1,23 @@
-.hell {
+.hellContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .hell {
+    display: flex;
     color: $grey;
-    text-align: center;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
     transition: color 0.5s;
 
-    &:hover {
-        color: $crimson;
-        transition: 0.5s ease-in-out;
-        border-bottom: 2px solid $crimson;
+        h2 {
+            margin: 0px;
+        }
+
+        &:hover {
+            color: $crimson;
+            transition: 0.5s ease-in-out;
+            border-bottom: 3px solid $crimson;
+        }
     }
 }
+
