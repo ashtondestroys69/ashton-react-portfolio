@@ -1,3 +1,9 @@
+.btn-wrapper {
+    display: grid;
+}
+
 .btn {
     @include base-btn();
+
+    align-items: center;
 }
