@@ -3,6 +3,19 @@
     justify-content: space-between;
     padding: 30px;
 
+    .right-side {
+        a {
+            margin-left: 15px;
+            cursor: pointer;
+            color: $light-green;
+            transition: 0.5s ease-in-out;
+
+             &:hover {
+                 color: $dark-green;
+             }
+        }
+    }
+
     .left-side {
         display: flex;
     }
@@ -22,12 +35,12 @@
 
             &:hover {
                 color: black;
-                border-bottom: 2px solid black;
+                border-bottom: 2px solid $dark-green;
             }
         }
 
         .nav-link-active {
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid $dark-green;
             color: black;
         }
     }
