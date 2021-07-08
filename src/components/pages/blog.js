@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import BlogItem from "../blog/blog-item";
 import BlogModal from "../modals/blog-modal";
-import ReactModal from "react-modal";
+// import ReactModal from "react-modal";
 
-ReactModal.setAppElement(".app-wrapper");
+// ReactModal.setAppElement(".app-wrapper");
 
 class Blog extends Component {
     constructor() {
