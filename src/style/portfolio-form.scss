@@ -7,4 +7,31 @@
     input {
         margin-bottom: 0px;
     }
+
+    .image-uploaders {
+        @include base-grid();
+        grid-template-columns: 200px 200px 200p;
+        height: 150px;
+        margin-bottom: 15px;
+
+        .portfolio-manager-image-wrapper {
+            img {
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+
+            .image-removal-link {
+                display: flex;
+                justify-content: center;
+
+                a {
+                    font-weight: 900;
+                    color: $crimson;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }
