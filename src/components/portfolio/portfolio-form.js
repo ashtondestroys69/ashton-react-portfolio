@@ -187,8 +187,7 @@ export default class PortfolioForm extends Component {
         }).catch(error => {
             console.log("Error with Portfolio Form handleSubmit", error);
         })
-
-        this.buildForm();
+        
         event.preventDefault(); // Stops page from refreshing on submit (Don't want that in React)
     }
 
